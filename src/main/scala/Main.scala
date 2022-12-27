@@ -21,7 +21,7 @@ object Main {
     println("----------------------- > Filtered Count : " +
       filteredRDD.count())
     filteredRDD.foreach(line => println("-------------------------->" + line))
-    //filteredRDD.saveAsTextFile("C:\\Users\\hasanozka\\IdeaProjects\\scala-spark\\data\\filtered_result")
+    filteredRDD.saveAsTextFile("C:\\Users\\hasanozka\\IdeaProjects\\scala-spark\\data\\filtered_result")
 
 
     val rdd_movies = spark.sparkContext.textFile("C:\\Users\\hasanozka\\IdeaProjects\\scala-spark\\data\\movies.csv");
